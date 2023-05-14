@@ -1,0 +1,139 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-florzinha:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-florzinhas{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: center;
+}
+
+main .cartao-florzinha{
+    background-color: #bbd6eb;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-florzinha:hover{
+    background-color: #6dc1bd;
+}
+
+.modo-escuro .cartao-florzinha{
+    background-color: #a8a8a8;
+}
+
+main .cartao-florzinha .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-florzinha .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-florzinha .gif{
+    width: 90px;
+    
+}
+
+main .cartao-florzinha .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-florzinha .tipo{
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.plantae{
+    background-color: #7ac74c;
+}
+
+.rosales{
+    background-color: palevioletred;
+}
+
+.cornales{
+    background-color: rgb(115, 128, 200);
+}
+
+.alismatales{
+    background-color: burlywood;
+}
+
+.asterales{
+    background-color: rgb(212, 212, 47);
+}
+
+.boraginales{
+    background-color: rgb(89, 179, 235);
+}
+
+.nenhum, .nenhuma{
+    background-color: rgb(196, 64, 64);
+}
+
+.lamiales{
+    background-color: rgb(189, 138, 237);
+}
+
+.nymphaeales{
+    background-color: rgb(240, 198, 142);
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 13px;
+    padding-right: 10px;
+}
